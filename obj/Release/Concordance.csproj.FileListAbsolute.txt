@@ -1,0 +1,14 @@
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\bin\Release\Concordance.exe.config
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\bin\Release\Concordance.exe
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\bin\Release\Concordance.pdb
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.csprojResolveAssemblyReference.cache
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Main.g.cs
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\App.g.cs
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance_MarkupCompile.cache
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance_MarkupCompile.lref
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Main.baml
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.g.resources
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.Properties.Resources.resources
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.csproj.GenerateResource.Cache
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.exe
+C:\Users\medvedbeast\Desktop\Concordance\Concordance\obj\Release\Concordance.pdb

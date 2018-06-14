@@ -1,0 +1,111 @@
+﻿<Window x:Class="Concordance.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Concordance"
+        mc:Ignorable="d"
+        Title="Concordance" Height="768" Width="1024" Closing="OnWindowClosing">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TabControl Grid.RowSpan="1" Grid.ColumnSpan="2">
+            <TabItem Header="Files to search">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5px"/>
+                        <RowDefinition Height="25px"/>
+                        <RowDefinition Height="5px"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5px"/>
+                        <RowDefinition Height="25px"/>
+                        <RowDefinition Height="5px"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="10*"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="25px"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="5px"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="1" Grid.Row="1" Click="OnSelectPathClicked">Select path:</Button>
+                    <Label Name="pathField" Grid.Column="3" Grid.Row="1" ></Label>
+                    <Label Name="fileInfoLabel"  Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="5"></Label>
+                    <ListView Name="fileList"  Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="3" SelectionChanged="OnFileListSelection"></ListView>
+                    <Label Grid.Column="7" Grid.Row="1">Queue</Label>
+                    <ListView Name="queueList" Grid.Column="7" Grid.Row="3"></ListView>
+                    <StackPanel Grid.Column="5" Grid.Row="3" VerticalAlignment="Center">
+                        <Button Margin="0 0 0 5" Click="OnMoveRightClicked">&gt;</Button>
+                        <Button Margin="0 0 0 5" Click="OnMoveLeftClicked">&lt;</Button>
+                        <Button Margin="0 0 0 5" Click="OnMoveAllRightClicked">&gt;&gt;</Button>
+                        <Button Click="OnMoveAllLeftClicked">&lt;&lt;</Button>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Results">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="15*"/>
+                        <ColumnDefinition Width="5px"/>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="5px"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5px"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5px"/>
+                        <RowDefinition Height="25px"/>
+                        <RowDefinition Height="5px"/>
+                    </Grid.RowDefinitions>
+                    <DataGrid Name="resultsGrid" Grid.Column="1" Grid.ColumnSpan="7" Grid.Row="1" >
+                    </DataGrid>
+                    <Button Grid.Column="1" Grid.Row="3" Click="OnMoveToDatabaseClicked">Move to database</Button>
+                    <CheckBox Name="autoMoveBox" Grid.Column="3" Grid.Row="3" IsChecked="True" VerticalAlignment="Center" FontSize="12" Margin="0,5">Move results automatically</CheckBox>
+                    <Label Name="resultsStatus" Grid.Column="5" Grid.ColumnSpan="3" Grid.Row="3" FontSize="12" HorizontalAlignment="Right"></Label>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Frequency">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="5"/>
+                        <RowDefinition Height="30"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="5"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="5"/>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Button Grid.Column="1" Grid.Row="1" Click="OnCreateFrequencyClicked">Create frequency table</Button>
+                    <TextBox Name="info" Grid.Column="3" Grid.Row="1" Grid.RowSpan="4"></TextBox>
+                    <TextBox Name="line" Grid.Column="1" Grid.Row="3"></TextBox>
+                    
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+
+    <Window.Resources>
+
+    </Window.Resources>
+</Window>

@@ -1,0 +1,71 @@
+﻿/------------------------/
+20.04.2016 20:42:24
+Frequency creation interrupted on line 13719
+
+Window closed
+
+/------------------------/
+20.04.2016 21:07:35
+Frequency creation interrupted on line 14587
+Table 'concordance.ﬁghting' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Concordance.Main.<>c__DisplayClass35_2.<OnCreateFrequencyClicked>b__0() in D:\Work\Concordance\Main.xaml.cs:line 608
+
+
+/------------------------/
+20.04.2016 21:07:42
+Frequency creation interrupted on line 14587
+Table 'concordance.ﬁghting' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Concordance.Main.<>c__DisplayClass35_2.<OnCreateFrequencyClicked>b__0() in D:\Work\Concordance\Main.xaml.cs:line 608
+
+
+/------------------------/
+20.04.2016 21:07:56
+Frequency creation interrupted on line 15162
+
+Window closed
+
+/------------------------/
+21.04.2016 19:48:41
+D:\Мама\0. Люба\7. Дисципліни-2014\Дипломні роботи 4 курс\Готові дипломні роботи\OANC_GrAF\OANC-GrAF\data\spoken\face-to-face\charlotte\ArguetaBertila-ENG-hepple.xml
+
+Window closed
+
+/------------------------/
+21.04.2016 19:48:55
+D:\Мама\0. Люба\7. Дисципліни-2014\Дипломні роботи 4 курс\Готові дипломні роботи\OANC_GrAF\OANC-GrAF\data\spoken\face-to-face\charlotte\BorelRaymondHydeII-hepple.xml
+
+Window closed
+
+/------------------------/
+21.04.2016 19:49:45
+D:\Мама\0. Люба\7. Дисципліни-2014\Дипломні роботи 4 курс\Готові дипломні роботи\OANC_GrAF\OANC-GrAF\data\spoken\face-to-face\charlotte\ArguetaBertila-ENG-hepple.xml
+
+Window closed
+
+/------------------------/
+22.04.2016 17:04:57
+Unable to connect to any of the specified MySQL hosts.
+
+   at MySql.Data.MySqlClient.NativeDriver.Open()
+   at MySql.Data.MySqlClient.Driver.Open()
+   at MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   at MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   at MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   at MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Concordance.Main..ctor() in D:\Work\Concordance\Main.xaml.cs:line 50
+
